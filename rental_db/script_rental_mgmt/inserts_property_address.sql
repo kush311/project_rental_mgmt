@@ -1,0 +1,22 @@
+INSERT INTO property_address (property_fk, address_type, street, unit, city, state, zip)
+VALUES
+(1, 'physical', '100 Main St', '101', 'Phoenix', 'AZ', '85001'),
+(1, 'mailing', '101 Main St', 'A', 'Phoenix', 'AZ', '85001'),
+(2, 'physical', '200 Palm Rd', '202', 'Tempe', 'AZ', '85281'),
+(2, 'mailing', '201 Palm Rd', 'B', 'Tempe', 'AZ', '85281'),
+(3, 'physical', '300 Breeze Ave', '303', 'Mesa', 'AZ', '85201'),
+(3, 'mailing', '301 Breeze Ave', 'C', 'Mesa', 'AZ', '85201'),
+(4, 'physical', '400 Mountain Blvd', '404', 'Scottsdale', 'AZ', '85250'),
+(4, 'mailing', '401 Mountain Blvd', 'D', 'Scottsdale', 'AZ', '85250'),
+(5, 'physical', '500 Loft St', '505', 'Chandler', 'AZ', '85225'),
+(5, 'mailing', '501 Loft St', 'E', 'Chandler', 'AZ', '85225'),
+(6, 'physical', '600 Lakeview Dr', '606', 'Peoria', 'AZ', '85345'),
+(6, 'mailing', '601 Lakeview Dr', 'F', 'Peoria', 'AZ', '85345'),
+(7, 'physical', '700 Greenway St', '707', 'Glendale', 'AZ', '85301'),
+(7, 'mailing', '701 Greenway St', 'G', 'Glendale', 'AZ', '85301'),
+(8, 'physical', '800 Sunset Rd', '808', 'Gilbert', 'AZ', '85234'),
+(8, 'mailing', '801 Sunset Rd', 'H', 'Gilbert', 'AZ', '85234'),
+(9, 'physical', '900 Cactus Ln', '909', 'Surprise', 'AZ', '85374'),
+(9, 'mailing', '901 Cactus Ln', 'I', 'Surprise', 'AZ', '85374'),
+(10, 'physical', '1000 Grande Ave', '1010', 'Avondale', 'AZ', '85323'),
+(10, 'mailing', '1001 Grande Ave', 'J', 'Avondale', 'AZ', '85323');

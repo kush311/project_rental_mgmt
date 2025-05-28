@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="erd_rental_mgmt_v1.erd">
+	<entities>
+		<data-source id="mysql8-1907a1a30cd-1bab1aad94e0b090">
+			<entity id="1" name="property" fq-name="home_rental.property" order="0" x="457" y="46">
+				<path name="home_rental"/>
+			</entity>
+			<entity id="2" name="property_address" fq-name="home_rental.property_address" order="1" x="373" y="340">
+				<path name="home_rental"/>
+			</entity>
+			<entity id="3" name="property_units" fq-name="home_rental.property_units" order="2" x="722" y="342">
+				<path name="home_rental"/>
+			</entity>
+			<entity id="4" name="unit_type" fq-name="home_rental.unit_type" order="3" x="1099" y="581">
+				<path name="home_rental"/>
+			</entity>
+			<entity id="5" name="property_type" fq-name="home_rental.property_type" order="4" border-width="3" x="62" y="537">
+				<path name="home_rental"/>
+			</entity>
+			<entity id="6" name="address_type" fq-name="home_rental.address_type" order="5" x="533" y="646">
+				<path name="home_rental"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_property_address" fq-name="home_rental.property_address.fk_property_address" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="fk_property_units" fq-name="home_rental.property_units.fk_property_units" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="property_type_fk" fq-name="home_rental.property.property_type_fk" type="fk" pk-ref="5" fk-ref="1"/>
+	</relations>
+</diagram>
